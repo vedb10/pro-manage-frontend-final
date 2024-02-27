@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, {  useState,useNavigate } from 'react'
 import { Link } from "react-router-dom";
 import loginImg from '../../assets/loginImg.png'
 import styles from './register.module.css'
@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { registerUser } from '../../apis/auth';
 
 export default function Register() {
+  const navigate = useNavigate()
   const  [submitCheck, setSubmitCheck] = useState(false)
   const [eye, setEye] = useState("password")
   const [formData, setFormData] = useState({
@@ -39,7 +40,8 @@ export default function Register() {
         });
 
         const response = await registerUser({...formData})
-        console.log(response.token)
+        navigate('/')
+        
       
       }  else toast.error('Password did not match', {
         position: "top-center",
