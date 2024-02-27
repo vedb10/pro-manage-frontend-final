@@ -1,0 +1,27 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C2DEEF ;
+}
+p{
+    font-size: x-large;
+    color: #14253F;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.errorimg{
+    width: 800px;
+    height: 400px;
+}
+
+button{
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    /* border: none; */
+    background-color: white;
+}

@@ -1,0 +1,154 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.top{
+    width: 82vw;
+    
+}
+
+.top_first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px 10px 20px ;
+    font-family: "Roboto";
+}
+
+.welcome{
+    font-size:large;
+    font-family: "Roboto";
+}
+.board{
+    font-size: xx-large;
+    font-family: "Roboto";
+
+}
+.date{
+    color: rgba(113, 110, 110, 0.703);
+    font-size: larger;
+}
+
+.top_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px 0px 20px ;
+    font-family: "Roboto";
+}
+
+.filter {
+    width: 125px;
+    height: 30px;
+    font-size: medium;
+    font-weight: 600;
+    padding-left: 13px;
+    border: none;
+    /* Set the text color for the select */
+}
+
+.filter option {
+    gap: 10px;
+}
+
+.bottom{
+    width: 82vw;
+    height: auto;
+    overflow-x: scroll;
+    
+}
+
+.card_container_box{
+    display: flex;
+    width: 105vw;
+    padding-bottom: 15px;
+
+}
+
+.card_container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 341px;
+    height: 550px;
+    background-color: #EEF2F5;
+    margin-left: 20px ;
+    border-radius: 10px;
+}
+
+.bottom::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.bottom::-webkit-scrollbar-thumb {
+    background-color: #8daab9b0;
+    border-radius: 10px; 
+}
+
+.bottom::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.cards::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: #8DAAB9;
+    border-radius: 10px; 
+}
+
+.cards::-webkit-scrollbar-track {
+    background-color: #D6EAF4;
+    border-radius: 10px;
+}
+
+.card_buttons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 20px 10px 20px;
+    font-weight: 600;
+    
+}
+.todobtn{
+    display: flex;
+    
+}
+
+.collapse{
+    padding: 0;
+    background: none;
+    border: none;
+}
+.collapse > img{
+    width: 22px;
+    height: 22px;
+}
+
+.plus{
+    padding: 0;
+    background: none;
+    border: none;
+    width: 34px;
+    height: 32px;
+    padding-left: 5px;
+
+}
+
+.plus>img{
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+.cards{
+    height: 500px;
+    position: relative;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    width: 341px;
+}

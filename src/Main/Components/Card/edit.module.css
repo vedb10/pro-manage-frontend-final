@@ -1,0 +1,268 @@
+.container{
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.608);
+    z-index: 1;
+}
+
+.menu{
+    background-color: white;
+    width: 573px;
+    min-height: 600px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    display: inline;
+    position: relative;
+}
+
+.circle{
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+}
+
+.fline{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+.title{
+    font-size: large;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 7px;
+}
+
+.task_input{
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 12px;
+    border-color:rgba(128, 128, 128, 0.332) ;
+    font-size: medium;
+    color: #707070;
+}
+
+
+.select{
+    font-size: medium;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 7px;
+    margin-right: 9px;
+}
+
+.sline{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pributton{
+    width: auto;
+    height: 28px;
+    border-color: rgba(128, 128, 128, 0.264);
+    padding: 0 7px;
+    margin-right: 10px;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5px;
+    color: grey;
+}
+
+.addtask > img{
+    width: 8px;
+    height: 8px;
+}
+
+.task_container{
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.checklist{
+    font-size: medium;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 7px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    border:#E2E2E2 solid;
+    border-radius: 10px;
+    width: 97%;
+    height: auto;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+.task input[type="checkbox"] {
+   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ccc;
+    border-radius: 8px; 
+    outline: none; 
+    margin-right: 5px; 
+  }
+  
+  .task input[type="checkbox"]:checked {
+    background-color: #17A2B8;
+  }
+  
+  .task input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: block;
+    width: 20px;
+    height: 24px;
+    line-height: 20px; 
+    text-align: center;
+    color: #fff; 
+    font-weight:900;
+  }
+  
+.task>textarea{
+    resize: none;
+    border: none;
+    width: 500px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 16px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Roboto";
+    color: rgba(34, 31, 31, 0.849) ;
+}
+
+.task_container::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.task_container::-webkit-scrollbar-thumb {
+    background-color: #8daab9b0;
+    border-radius: 10px; 
+}
+
+.task_container::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+
+.deletebtn{
+    border: none;
+}
+
+.add_task_container{
+    border: none;
+    text-align: left;
+    margin-top: 8px;
+
+}
+.addtask{
+    border: none;
+    align-items: center;
+    justify-content: left;
+    font-size: large;
+    box-shadow: none;
+    
+}
+
+.bottom_buttons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+
+    
+}
+
+.right_side_btn{
+    width: 300px;
+    display: flex;
+    position: absolute;
+    bottom: 33px;
+    right: 44px;
+    justify-content: space-between;
+}
+
+.savebtn{
+    background-color: #17A2B8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 130px;
+}
+
+.cancelbtn{
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    border: red solid 2px;
+    width: 130px;
+}
+
+/* ... Existing styles ... */
+
+.custom_date_picker {
+    position: absolute;
+    bottom: 14px;
+    left: 2px;
+    border:#E2E2E2 solid;
+}
+
+.custom_date_picker input[type="date"] {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    width: 141px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.custom_date_picker input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.custom_date_picker .custom_placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: max-content;
+    color: #707070;
+    font-weight: bold;
+}
+

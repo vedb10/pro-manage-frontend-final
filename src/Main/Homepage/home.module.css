@@ -1,0 +1,87 @@
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 17%;
+    border-right:#EDF5FE solid ;
+    height: 100vh;
+    min-width: 200px;
+}
+.left> .img_container{
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    padding: 25px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left> .img_container >img{
+    width: 180px;
+    height:42px ;
+}
+
+.nav_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.nav_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.nav_btn > button{
+    font-size: medium;
+    font-weight: bolder;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+.nav_btn > button > img{
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.logoutbtn{
+    position:relative;
+    top: 45%;
+    width: 100%;
+    border: none;
+    color: red;
+    font-weight: 600;
+    font-size: larger;
+    font-family:sans-serif;
+    letter-spacing: 1.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoutbtn > img{
+    width: 25px;
+    height: 28px;
+    margin-right: 20px;
+    font-family: "Poppins";
+}
+
+.logout-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the default text color */
+  }
+  
+  .logout-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+  }

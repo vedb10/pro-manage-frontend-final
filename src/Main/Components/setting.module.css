@@ -1,0 +1,81 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.top{
+   
+    height: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: xx-large;
+    display: flex;
+    font-weight: bolder;
+    
+}
+
+.input_box{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.field{
+    width: 400px;
+    height: 50px;
+    border: solid rgba(128, 128, 128, 0.626) 3px ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.field> img{
+    width: 28px;
+    height: 28px;
+    
+}
+.field> button >img{
+    width: 40px;
+    height: 40px;
+}
+.field> input{
+    width: 500px;
+    height: 40px;
+    color: rgba(128, 128, 128, 0.607);
+    font-size: x-large;
+    margin-left: 15px;
+}
+
+.container > .right >form > .inputbox >.field> input:focus{
+    outline: 0;
+}
+.container > .right >form > .inputbox >.field>button{
+    border: none;
+    background: none;
+}
+
+.field>button{
+    border: none;
+    background: none;
+}
+
+.field> input:focus{
+    outline: 0;
+}
+
+.updatebtn{
+    width: 100%;
+    height: 50px;
+    background-color: #17A2B8;
+    border-radius: 30px;
+    border: none;
+    font-size: larger;
+    color:white ;
+    border-width: 3px;
+}
