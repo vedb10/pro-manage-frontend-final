@@ -5,8 +5,8 @@ export default function ConfiramtionPage({operation,cancelfn,text}) {
   const decider = () =>{
     cancelfn()
   }
-  const deleter = ()=>{
-    operation()
+  const deleter =async ()=>{
+    await operation()
     window.location.reload()
   }
   return (
