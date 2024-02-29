@@ -97,7 +97,7 @@ export default function Analytics() {
                    <div style={{fontWeight:"bolder"}}>{highCount.toString().padStart(2, '0')}</div>
               </li>
               <li> <div className={style.list_div}><img src={bullet} alt="bullet" style={{width:"10px",height:"10px",marginRight:"8px"}}/>Due Date Tasks</div>
-                   <div style={{fontWeight:"bolder"}}>{dueDateCount}</div> 
+                   <div style={{fontWeight:"bolder"}}>{dueDateCount.toString().padStart(2, '0')}</div> 
               </li>
             </ul>
 
