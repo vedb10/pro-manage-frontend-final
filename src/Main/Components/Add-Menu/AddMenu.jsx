@@ -16,7 +16,8 @@ export default function AddMenu({onCancel}) {
   const [date, setDate] = useState('')
   const [cancel, setCancel] = useState(true)
 
-
+ const completedTasksCount = tasks.filter(task => task.completed).length;
+  const totalTasksCount = tasks.length;
 
   const addTask = () => {
       setTasks([...tasks, { completed: false, name: newTaskName }]);
@@ -111,7 +112,7 @@ export default function AddMenu({onCancel}) {
             <button className={styles.pributton} style={priority === "LOW PRIORITY"?{backgroundColor:"#EEECEC"}:{backgroundColor:"white"}} onClick={()=>setPriority("LOW PRIORITY")}><img src={green} alt="" className={styles.circle} />LOW PRIORITY</button>
           </div>
           <div className={styles.tline}>
-      <p1 className={styles.checklist}>Checklist<span style={{color:"red"}}>*</span></p1>
+      <p1 className={styles.checklist}>Checklist {` (${completedTasksCount}/${totalTasksCount}) `} <span style={{color:"red"}}>*</span></p1>
       <div className={styles.task_container}>
         {tasks.map((task, index) => (
           <div key={index} className={styles.task}>
