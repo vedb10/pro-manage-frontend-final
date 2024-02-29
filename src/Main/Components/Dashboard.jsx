@@ -19,7 +19,7 @@ export default function Dashboard() {
   const [collapseDone, setCollapseDone] = useState(false);
   const [option, setOption] = useState("week")
 
-  console.log(option)
+  
 
   // ... (your existing useEffects and other functions)
 
@@ -46,10 +46,10 @@ export default function Dashboard() {
   const collector = async () => {
     try {
       const email = sessionStorage.getItem("email");
-      console.log(email);
+ 
   
       const result = await getCards(email,option);
-      console.log(result); 
+  
       
       setCardsData(result)
     } catch (error) {
@@ -59,7 +59,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    console.log("Option changed. Fetching data...");
+   
     collector();
   }, [option]);
 
@@ -78,7 +78,7 @@ export default function Dashboard() {
   }
 
 
-  // console.log(typeof data)
+ 
   
   useEffect(()=>{
     getname()
