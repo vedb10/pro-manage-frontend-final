@@ -41,8 +41,7 @@ export default function Login() {
             const resBody = await loginUser(reqBody);
             
             if (resBody && resBody.token) {
-                console.log(resBody.email)
-                console.log(resBody.token);
+                
                 sessionStorage.setItem("token", resBody.token);
                 sessionStorage.setItem("email",resBody.email)
                 toast.dismiss();
