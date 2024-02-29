@@ -32,10 +32,10 @@ export default function Settings() {
               newPassword: '',
               token:token
             });
-            console.log('Form data:', formData);
+           
       
               const response = await updatepass({...formData})
-            //   console.log(response.token)
+           
             
             
           }else toast.error('Fill all the data', {
