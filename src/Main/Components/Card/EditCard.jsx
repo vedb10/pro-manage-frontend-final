@@ -61,7 +61,7 @@ export default function AddMenu({onCancel,titleprop,priprop,tasksprop,dateprop,c
 
   const saveObj = async ()=>{
     if(!title || tasks.length === 0 || !priority){
-      console.log("enter all data")
+    
     }else{
     const newReqBody = {
       title: title,
@@ -71,7 +71,7 @@ export default function AddMenu({onCancel,titleprop,priprop,tasksprop,dateprop,c
       _id:cardid
     };
     
-    console.log(newReqBody)
+    
     await updateCards(newReqBody)
     window.location.reload()
 
