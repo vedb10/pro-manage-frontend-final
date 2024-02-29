@@ -134,7 +134,7 @@ export default function Register() {
             <Link to="/"><button className={styles.registerbtn}>Log in</button></Link>
               <ToastContainer
                 position="top-right"
-                autoClose={5000}
+                autoClose={1200}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
