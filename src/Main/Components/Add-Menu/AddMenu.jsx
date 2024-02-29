@@ -17,7 +17,7 @@ export default function AddMenu({onCancel}) {
   const [cancel, setCancel] = useState(true)
 
 
-  // console.log(sessionStorage.getItem('reqbody'))
+
   const addTask = () => {
       setTasks([...tasks, { completed: false, name: newTaskName }]);
       setNewTaskName('');
