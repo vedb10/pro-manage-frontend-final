@@ -132,6 +132,19 @@ export default function Register() {
             <button type='submit' onClick={()=>setSubmitCheck(true)} className={styles.loginbtn}>Register</button>
             <p style={{fontSize:"20px"}}>Have an account ?</p>
             <Link to="/"><button className={styles.registerbtn}>Log in</button></Link>
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                />
+              <ToastContainer />
             </div>
           </form>
             
