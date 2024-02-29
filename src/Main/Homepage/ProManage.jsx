@@ -5,7 +5,7 @@ import ErrorPage from './ErrorPage'
 
 export default function ProManage() {
   const [tokenPresent, setTokenPresent] = useState(sessionStorage.getItem('token') ? true : false)
-  console.log(tokenPresent)
+
   return (
     
     <div className='conatiner' style={{width:"auto",height:"auto"}}>
