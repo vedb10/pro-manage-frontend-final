@@ -52,10 +52,7 @@ export default function Analytics() {
           
       
      }
-     // console.log("comp "+completedCount)
-     // console.log("back "+backlogCount)
-     // console.log("pro "+inProgressCount)
-     // console.log("todo"+todoCount)
+     
     
 
 
