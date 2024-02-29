@@ -31,7 +31,7 @@ export default function Register() {
     e.preventDefault();
     if(formData.name && formData.email && formData.password && formData.confirmPassword){
       if(formData.password === formData.confirmPassword){
-        console.log('Form data:', formData);
+       
         setFormData({
           name: '',
           email: '',
