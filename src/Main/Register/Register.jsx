@@ -56,12 +56,6 @@ export default function Register() {
         }else {
           toast.error('Please try again', {
         position: "top-center",
-        autoClose: 1200,
-        hideProgressBar: false,
-        // closeOnClick: true,
-        // pauseOnHover: true,
-        // draggable: true,
-        progress: undefined,
         theme: "light",
         
         });
@@ -70,12 +64,6 @@ export default function Register() {
       
       }  else toast.error('Password did not match', {
         position: "top-center",
-        autoClose: 1200,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
         theme: "light",
         
         });
@@ -132,24 +120,18 @@ export default function Register() {
             <button type='submit' onClick={()=>setSubmitCheck(true)} className={styles.loginbtn}>Register</button>
             <p style={{fontSize:"20px"}}>Have an account ?</p>
             <Link to="/"><button className={styles.registerbtn}>Log in</button></Link>
-              <ToastContainer
-                position="top-right"
-                autoClose={1200}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-                />
-              <ToastContainer />
+              
             </div>
           </form>
             
             
         </div>
+      <div>
+        <ToastContainer
+                position="top-right"
+                theme="light"
+                />
+      </div>
     </div>
   )
 }
