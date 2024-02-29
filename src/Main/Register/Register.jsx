@@ -41,11 +41,36 @@ export default function Register() {
 
         const response = await registerUser({...formData})
         setSubmitCheck(false)
+        if(response){
+          toast.success('Registration successful', {
+        position: "top-center",
+        autoClose: 1200,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        
+        });
+        }else {
+          toast.error('Please try again', {
+        position: "top-center",
+        autoClose: 1200,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        
+        });
+        }
         
       
       }  else toast.error('Password did not match', {
         position: "top-center",
-        autoClose: 3000,
+        autoClose: 1200,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
